@@ -95,7 +95,7 @@ public class User implements UserDetails, Principal {
         return UserDetails.super.isEnabled();
     }
 
-    private String getFullName() {
+    public String getFullName() {
         return String.format("%s %s", firstname, lastname);
     }
 }
